@@ -2,10 +2,10 @@ let pianoKeys = document.querySelectorAll('.piano-keys .key');
 let volumeSlider = document.querySelector('.volume input');
 let showSwitch = document.querySelector('.keys-check input');
 let allKeys = [];
-let audio = new Audio('public/tunes/a.wav');
+let audio = new Audio('./public/tunes/a.wav');
 
 const playTune = (key) => {
-    audio.src = `/public/tunes/${key}.wav`;
+    audio.src = `./public/tunes/${key}.wav`;
     audio.play();
 }
 
